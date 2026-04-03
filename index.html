@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
 <html lang="en">
 <head>
   <title>Ismail Kuru</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ismail Kuru — Computer Scientist, postdoctoral researcher at Aarhus University CPV. Research in program logics, verification, and low-level systems.">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="izstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="izstyle.css">
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <ul class="nav navbar-nav">
+<nav class="navbar">
+  <div class="navbar-inner">
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#talks">Talks &amp; News</a></li>
       <li><a href="#papers">Papers</a></li>
@@ -38,14 +32,12 @@
   <div class="row">
 
     <!-- Sidebar -->
-    <div class="col-md-3 col-xs-12">
-      <div class="sidebar-name">Ismail Kuru</div><br>
-      <div class="row">
-        <div class="col-md-10 col-xs-4">
-          <img class="img-responsive profile-photo" src="pictures/fikos.jpg" alt="Ismail Kuru">
-        </div>
-      </div><br>
-      <div class="sidebar-links">
+    <aside class="sidebar">
+      <div class="sidebar-photo">
+        <div class="sidebar-name">Ismail Kuru</div>
+        <img class="profile-photo" src="pictures/fikos.jpg" alt="Ismail Kuru">
+      </div>
+      <div class="sidebar-info sidebar-links">
         <p>Email: ik335 at drexel dot edu</p>
         <p><a href="https://scholar.google.com/citations?hl=en&user=lDXIRIYAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></p>
         <p><a href="https://github.com/ismailkuru" target="_blank" rel="noopener noreferrer">GitHub</a></p>
@@ -54,10 +46,10 @@
         <p><a href="https://github.com/ismailkuru/ismailkuru.github.io/blob/main/pdfs/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a></p>
         <p><a href="https://github.com/ismailkuru/ismailkuru.github.io/blob/main/pdfs/rs.pdf" target="_blank" rel="noopener noreferrer">Research Statement</a></p>
       </div>
-    </div>
+    </aside>
 
     <!-- Main Content -->
-    <div class="col-md-8 col-xs-12">
+    <div class="main-content">
       <div class="main-bio">
 
         <p>Hello!</p>
@@ -76,10 +68,9 @@
       <div class="section-block">
         <h2 id="talks">Talks &amp; News</h2>
         <div class="news-list">
-          <p><b>^ Future</b></p>
           <p><b>November 2025:</b> I gave a talk to the ROIS Group at NII Japan. <a href="https://github.com/ismailkuru/ismailkuru.github.io/blob/main/pdfs/NII_Talk.pdf" target="_blank" rel="noopener noreferrer">Slides</a></p>
           <p><b>August 2025:</b> "On Verification Patterns for Low-Level Systems via Modal Abstractions" accepted at PLOS 2025, co-located with SOSP 2025.</p>
-          <p><b>August 2025:</b> "Modal Abstractions for Virtualizing Memory Addresses" accepted at OOPSLA 2024–2025.</p>
+          <p><b>August 2025:</b> "Modal Abstractions for Virtualizing Memory Addresses" accepted at OOPSLA 2024&ndash;2025.</p>
           <p><b>July 2025:</b> Continuing research at Drexel as a researcher.</p>
           <p><b>March 2025:</b> Defended my thesis! <a href="https://github.com/ismailkuru/ismailkuru.github.io/blob/main/pdfs/thesis_defense.pdf" target="_blank" rel="noopener noreferrer">Slides</a></p>
           <p><b>September 2024:</b> Hosted as a research fellow at Drexel CCI.</p>
@@ -99,7 +90,7 @@
         <h3>Conference Papers</h3>
         <ul class="paper-list">
           <li>Kuru, I., &amp; Gordon, C. S. (To be submitted January 2026). Modal Understanding of Modularity of State Transition Systems.</li>
-          <li>Kuru, I., &amp; Gordon, C. S. (2025, August). <a href="https://arxiv.org/abs/2307.14471" target="_blank" rel="noopener noreferrer">Modal Abstractions for Virtualizing Memory Addresses</a>. <i>OOPSLA 2024–2025</i>. <a href="https://dl.acm.org/doi/pdf/10.1145/3763134" target="_blank" rel="noopener noreferrer">[DOI]</a> <a href="https://www.youtube.com/watch?v=zk81voE1zDk" target="_blank" rel="noopener noreferrer">[Video]</a></li>
+          <li>Kuru, I., &amp; Gordon, C. S. (2025, August). <a href="https://arxiv.org/abs/2307.14471" target="_blank" rel="noopener noreferrer">Modal Abstractions for Virtualizing Memory Addresses</a>. <i>OOPSLA 2024&ndash;2025</i>. <a href="https://dl.acm.org/doi/pdf/10.1145/3763134" target="_blank" rel="noopener noreferrer">[DOI]</a> <a href="https://www.youtube.com/watch?v=zk81voE1zDk" target="_blank" rel="noopener noreferrer">[Video]</a></li>
           <li>Kuru, I., &amp; Gordon, C. S. (2019, April). <a href="https://link.springer.com/chapter/10.1007/978-3-030-17184-1_4" target="_blank" rel="noopener noreferrer">A Type System for Read-Copy-Update Concurrency</a>. <i>European Symposium on Programming (ESOP 2019)</i>. <a href="https://doi.org/10.1007/978-3-030-17184-1_4" target="_blank" rel="noopener noreferrer">[DOI]</a></li>
         </ul>
 
@@ -127,12 +118,12 @@
 
         <h3>Conference Papers</h3>
         <ul class="paper-list">
-          <li>Kuru, I., Matar, H. S., Cristal, A., Kestor, G., &amp; Unsal, O. (2013). <a href="https://github.com/ismailkuru/ismailkuru.github.io/blob/main/pdfs/parv.pdf" target="_blank" rel="noopener noreferrer">PaRV: Parallelizing Runtime Detection and Prevention of Concurrency Errors</a>. In S. Qadeer &amp; S. Tasiran (Eds.), <i>Runtime Verification</i> (pp. 42–47). Springer Berlin Heidelberg.</li>
+          <li>Kuru, I., Matar, H. S., Cristal, A., Kestor, G., &amp; Unsal, O. (2013). <a href="https://github.com/ismailkuru/ismailkuru.github.io/blob/main/pdfs/parv.pdf" target="_blank" rel="noopener noreferrer">PaRV: Parallelizing Runtime Detection and Prevention of Concurrency Errors</a>. In S. Qadeer &amp; S. Tasiran (Eds.), <i>Runtime Verification</i> (pp. 42&ndash;47). Springer Berlin Heidelberg.</li>
         </ul>
 
         <h3>Book Chapters</h3>
         <ul class="paper-list">
-          <li>Cristal, A., Ozkan, B. K., Cohen, E., Kestor, G., Kuru, I., Unsal, O., Tasiran, S., Mutluergil, S. O., &amp; Elmas, T. (2015). <a href="https://github.com/ismailkuru/ismailkuru.github.io/blob/main/pdfs/transtools.pdf" target="_blank" rel="noopener noreferrer">Verification Tools for Transactional Programs</a>. In R. Guerraoui &amp; P. Romano (Eds.), <i>Transactional Memory: Foundations, Algorithms, Tools, and Applications</i> (pp. 283–306). Springer. <a href="https://doi.org/10.1007/978-3-319-14720-8_14" target="_blank" rel="noopener noreferrer">[DOI]</a></li>
+          <li>Cristal, A., Ozkan, B. K., Cohen, E., Kestor, G., Kuru, I., Unsal, O., Tasiran, S., Mutluergil, S. O., &amp; Elmas, T. (2015). <a href="https://github.com/ismailkuru/ismailkuru.github.io/blob/main/pdfs/transtools.pdf" target="_blank" rel="noopener noreferrer">Verification Tools for Transactional Programs</a>. In R. Guerraoui &amp; P. Romano (Eds.), <i>Transactional Memory: Foundations, Algorithms, Tools, and Applications</i> (pp. 283&ndash;306). Springer. <a href="https://doi.org/10.1007/978-3-319-14720-8_14" target="_blank" rel="noopener noreferrer">[DOI]</a></li>
         </ul>
 
         <h3>Workshop Papers</h3>
@@ -151,11 +142,11 @@
       <div class="section-block">
         <h2 id="awards">Awards &amp; Grants</h2>
         <ul>
-          <li>Scholarship for School on Univalent Mathematics Workshop, University of Minnesota Twin Cities, 2024. (Unfortunately not attended)</li>
+          <li>Scholarship for School on Univalent Mathematics Workshop, University of Minnesota Twin Cities, 2024.</li>
           <li>Scholarship for DeepSpec Summer School, Princeton University, 2018.</li>
           <li>Scholarship for PLMW at ICFP, UK, 2017.</li>
           <li>Travel Grant. Microsoft Research Visitor Grants (Multiple), hosted by Dr. Matthew Parkinson, UK, 2014.</li>
-          <li>Graduate School Scholarship. One of 18 Microsoft Research Europe PhD Scholarship recipients, 2011–2014.</li>
+          <li>Graduate School Scholarship. One of 18 Microsoft Research Europe PhD Scholarship recipients, 2011&ndash;2014.</li>
           <li>Travel Grant. Koc University, for the VCLA Winter School in Vienna, 2012.</li>
           <li>Travel Grant. Inria-Paris Visitor Grants (Multiple), hosted by Dr. Albert Cohen, France, 2011.</li>
         </ul>
